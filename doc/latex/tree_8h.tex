@@ -1,0 +1,416 @@
+\hypertarget{tree_8h}{\section{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/tree.h File Reference}
+\label{tree_8h}\index{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/tree.\-h@{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/tree.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$sys/time.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnode}{node}
+\item 
+struct \hyperlink{structdata_function}{data\-Function}
+\item 
+struct \hyperlink{structtable}{table}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structnode}{node} \hyperlink{tree_8h_aba087cc5af103c72c4e5864cc5622196}{Node}
+\item 
+typedef struct \hyperlink{structnode}{node} $\ast$ \hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree}
+\item 
+typedef struct \hyperlink{structdata_function}{data\-Function} \hyperlink{tree_8h_ae5466326c30120d952ed5ceb3210a11e}{Data\-Function}
+\item 
+typedef struct \hyperlink{structtable}{table} \hyperlink{tree_8h_aa7e5129a501662d82b7b69f2ab0c828b}{Tab\-Of\-Fun}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{tree_8h_ae2b788ea57a59f73101e33853c5a4e92}{Allocate\-Node} (char name\mbox{[}$\,$\mbox{]}, double start)
+\begin{DoxyCompactList}\small\item\em Function allocating and creating a new Node$\ast$ representing a function. \end{DoxyCompactList}\item 
+\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$ \hyperlink{tree_8h_ab3ec906f76fae3cc09ed8dec7f09326e}{Allocate\-Tab\-O\-F} ()
+\begin{DoxyCompactList}\small\item\em Function allocating and creating a new \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun}. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_a22a1e86774c5f4a26f6642526b565804}{Print\-Tree} (\hyperlink{struct_node}{Node} $\ast$N)
+\begin{DoxyCompactList}\small\item\em Function printing the tree on the standard output. \end{DoxyCompactList}\item 
+int \hyperlink{tree_8h_a8243759e4fb92c347ff739ebc337b4a1}{Nb\-Bro} (\hyperlink{struct_node}{Node} $\ast$N)
+\begin{DoxyCompactList}\small\item\em Function counting the number of bro\-R of the node N. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_acc9b76228ada6dba4e48dd0a76b2ca46}{Print\-Time} (double time)
+\begin{DoxyCompactList}\small\item\em Function printing a time. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_ad10daa0d9293b4cab7b0b8809f65aeec}{Print\-Time\-Tree} (\hyperlink{struct_node}{Node} $\ast$N)
+\item 
+void \hyperlink{tree_8h_a3ad3301fefd564eaa704f8e1ecf0b574}{Call\-Time} (\hyperlink{struct_node}{Node} $\ast$N)
+\begin{DoxyCompactList}\small\item\em Function calculating the call\-Time of a function using the start and end values of the node. \end{DoxyCompactList}\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{tree_8h_ac24fa1b4bf383cbab18e9f66ad96347f}{Explore\-Tree} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} T)
+\begin{DoxyCompactList}\small\item\em Function creating Sub-\/\-Tree of a Tree by exploring its son\-L and bro\-R. \end{DoxyCompactList}\item 
+int \hyperlink{tree_8h_ad2ec9ec65dc9effb8eccc36ad31577df}{Load\-From\-Log} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$T, F\-I\-L\-E $\ast$log)
+\begin{DoxyCompactList}\small\item\em Function creating a tree based on a .log file. \end{DoxyCompactList}\item 
+int \hyperlink{tree_8h_acb1c52de232dda6c5e5f157498c06222}{Tab\-From\-Tree} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$N, \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Function creating a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} from a Tree. \end{DoxyCompactList}\item 
+int \hyperlink{tree_8h_a51dda58ecd437227b83d18cc996a2e70}{print\-Tab} (\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Function printing a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} with the number of calls, the total time, and the average time for each function. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_af8b0553239e3508f17644db99b26bc70}{quick\-Sort\-Time} (\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the total time of each function. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_a0f51e0c2b67631dc3082320587b50b3c}{quick\-Sort\-Call} (\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the number of calls of each function. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_ad5ee0f909ea182cc176f288d79baab71}{quick\-Sort\-Moy} (\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the average time of each function. \end{DoxyCompactList}\item 
+void \hyperlink{tree_8h_a5bfbd71cc5f429d83a9a4d10e1f90515}{sort\-Choice} (\hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Function sorting the \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} depending on the user's choice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tree_8h_ae5466326c30120d952ed5ceb3210a11e}{\index{tree.\-h@{tree.\-h}!Data\-Function@{Data\-Function}}
+\index{Data\-Function@{Data\-Function}!tree.h@{tree.\-h}}
+\subsubsection[{Data\-Function}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf data\-Function}  {\bf Data\-Function}}}\label{tree_8h_ae5466326c30120d952ed5ceb3210a11e}
+\hypertarget{tree_8h_aba087cc5af103c72c4e5864cc5622196}{\index{tree.\-h@{tree.\-h}!Node@{Node}}
+\index{Node@{Node}!tree.h@{tree.\-h}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf node}  {\bf Node}}}\label{tree_8h_aba087cc5af103c72c4e5864cc5622196}
+\hypertarget{tree_8h_aa7e5129a501662d82b7b69f2ab0c828b}{\index{tree.\-h@{tree.\-h}!Tab\-Of\-Fun@{Tab\-Of\-Fun}}
+\index{Tab\-Of\-Fun@{Tab\-Of\-Fun}!tree.h@{tree.\-h}}
+\subsubsection[{Tab\-Of\-Fun}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf table}  {\bf Tab\-Of\-Fun}}}\label{tree_8h_aa7e5129a501662d82b7b69f2ab0c828b}
+\hypertarget{tree_8h_a822067948502eae593d9a26175010b36}{\index{tree.\-h@{tree.\-h}!Tree@{Tree}}
+\index{Tree@{Tree}!tree.h@{tree.\-h}}
+\subsubsection[{Tree}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf node} $\ast$ {\bf Tree}}}\label{tree_8h_a822067948502eae593d9a26175010b36}
+
+
+\subsection{Function Documentation}
+\hypertarget{tree_8h_ae2b788ea57a59f73101e33853c5a4e92}{\index{tree.\-h@{tree.\-h}!Allocate\-Node@{Allocate\-Node}}
+\index{Allocate\-Node@{Allocate\-Node}!tree.h@{tree.\-h}}
+\subsubsection[{Allocate\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} $\ast$ Allocate\-Node (
+\begin{DoxyParamCaption}
+\item[{char}]{name\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{start}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ae2b788ea57a59f73101e33853c5a4e92}
+
+
+Function allocating and creating a new Node$\ast$ representing a function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the function \\
+\hline
+{\em start} & Start time of the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new allocated Node$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file tree.\-c.
+
+\hypertarget{tree_8h_ab3ec906f76fae3cc09ed8dec7f09326e}{\index{tree.\-h@{tree.\-h}!Allocate\-Tab\-O\-F@{Allocate\-Tab\-O\-F}}
+\index{Allocate\-Tab\-O\-F@{Allocate\-Tab\-O\-F}!tree.h@{tree.\-h}}
+\subsubsection[{Allocate\-Tab\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab\-Of\-Fun} $\ast$ Allocate\-Tab\-O\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ab3ec906f76fae3cc09ed8dec7f09326e}
+
+
+Function allocating and creating a new \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun}. 
+
+\begin{DoxyReturn}{Returns}
+A new allocated \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file tree.\-c.
+
+\hypertarget{tree_8h_a3ad3301fefd564eaa704f8e1ecf0b574}{\index{tree.\-h@{tree.\-h}!Call\-Time@{Call\-Time}}
+\index{Call\-Time@{Call\-Time}!tree.h@{tree.\-h}}
+\subsubsection[{Call\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Call\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a3ad3301fefd564eaa704f8e1ecf0b574}
+
+
+Function calculating the call\-Time of a function using the start and end values of the node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & Current \hyperlink{struct_node}{Node} of the tree \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file tree.\-c.
+
+\hypertarget{tree_8h_ac24fa1b4bf383cbab18e9f66ad96347f}{\index{tree.\-h@{tree.\-h}!Explore\-Tree@{Explore\-Tree}}
+\index{Explore\-Tree@{Explore\-Tree}!tree.h@{tree.\-h}}
+\subsubsection[{Explore\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} $\ast$ Explore\-Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree}}]{T}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ac24fa1b4bf383cbab18e9f66ad96347f}
+
+
+Function creating Sub-\/\-Tree of a Tree by exploring its son\-L and bro\-R. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Tree to explore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sub-\/\-Tree of T 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file tree.\-c.
+
+\hypertarget{tree_8h_ad2ec9ec65dc9effb8eccc36ad31577df}{\index{tree.\-h@{tree.\-h}!Load\-From\-Log@{Load\-From\-Log}}
+\index{Load\-From\-Log@{Load\-From\-Log}!tree.h@{tree.\-h}}
+\subsubsection[{Load\-From\-Log}]{\setlength{\rightskip}{0pt plus 5cm}int Load\-From\-Log (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{F\-I\-L\-E $\ast$}]{log}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ad2ec9ec65dc9effb8eccc36ad31577df}
+
+
+Function creating a tree based on a .log file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Tree created \\
+\hline
+{\em log} & File used to build the tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success / exit with E\-X\-I\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E 
+\end{DoxyReturn}
+
+
+Definition at line 233 of file tree.\-c.
+
+\hypertarget{tree_8h_a8243759e4fb92c347ff739ebc337b4a1}{\index{tree.\-h@{tree.\-h}!Nb\-Bro@{Nb\-Bro}}
+\index{Nb\-Bro@{Nb\-Bro}!tree.h@{tree.\-h}}
+\subsubsection[{Nb\-Bro}]{\setlength{\rightskip}{0pt plus 5cm}int Nb\-Bro (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a8243759e4fb92c347ff739ebc337b4a1}
+
+
+Function counting the number of bro\-R of the node N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & Current \hyperlink{struct_node}{Node} of the tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int value of the number of bro\-R 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file tree.\-c.
+
+\hypertarget{tree_8h_a51dda58ecd437227b83d18cc996a2e70}{\index{tree.\-h@{tree.\-h}!print\-Tab@{print\-Tab}}
+\index{print\-Tab@{print\-Tab}!tree.h@{tree.\-h}}
+\subsubsection[{print\-Tab}]{\setlength{\rightskip}{0pt plus 5cm}int print\-Tab (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a51dda58ecd437227b83d18cc996a2e70}
+
+
+Function printing a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} with the number of calls, the total time, and the average time for each function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 for success 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file tree.\-c.
+
+\hypertarget{tree_8h_acc9b76228ada6dba4e48dd0a76b2ca46}{\index{tree.\-h@{tree.\-h}!Print\-Time@{Print\-Time}}
+\index{Print\-Time@{Print\-Time}!tree.h@{tree.\-h}}
+\subsubsection[{Print\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Print\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_acc9b76228ada6dba4e48dd0a76b2ca46}
+
+
+Function printing a time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to print on the standard output \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file tree.\-c.
+
+\hypertarget{tree_8h_ad10daa0d9293b4cab7b0b8809f65aeec}{\index{tree.\-h@{tree.\-h}!Print\-Time\-Tree@{Print\-Time\-Tree}}
+\index{Print\-Time\-Tree@{Print\-Time\-Tree}!tree.h@{tree.\-h}}
+\subsubsection[{Print\-Time\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void Print\-Time\-Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ad10daa0d9293b4cab7b0b8809f65aeec}
+
+
+Definition at line 98 of file tree.\-c.
+
+\hypertarget{tree_8h_a22a1e86774c5f4a26f6642526b565804}{\index{tree.\-h@{tree.\-h}!Print\-Tree@{Print\-Tree}}
+\index{Print\-Tree@{Print\-Tree}!tree.h@{tree.\-h}}
+\subsubsection[{Print\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void Print\-Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a22a1e86774c5f4a26f6642526b565804}
+
+
+Function printing the tree on the standard output. 
+
+Function printing the tree with the call time of each node on the standard output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & Current node of the tree\\
+\hline
+{\em N} & Current \hyperlink{struct_node}{Node} of the tree \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file tree.\-c.
+
+\hypertarget{tree_8h_a0f51e0c2b67631dc3082320587b50b3c}{\index{tree.\-h@{tree.\-h}!quick\-Sort\-Call@{quick\-Sort\-Call}}
+\index{quick\-Sort\-Call@{quick\-Sort\-Call}!tree.h@{tree.\-h}}
+\subsubsection[{quick\-Sort\-Call}]{\setlength{\rightskip}{0pt plus 5cm}void quick\-Sort\-Call (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a0f51e0c2b67631dc3082320587b50b3c}
+
+
+Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the number of calls of each function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} to sort \\
+\hline
+{\em debut} & The left end of the tab \\
+\hline
+{\em fin} & The right end of the tab \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 337 of file tree.\-c.
+
+\hypertarget{tree_8h_ad5ee0f909ea182cc176f288d79baab71}{\index{tree.\-h@{tree.\-h}!quick\-Sort\-Moy@{quick\-Sort\-Moy}}
+\index{quick\-Sort\-Moy@{quick\-Sort\-Moy}!tree.h@{tree.\-h}}
+\subsubsection[{quick\-Sort\-Moy}]{\setlength{\rightskip}{0pt plus 5cm}void quick\-Sort\-Moy (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_ad5ee0f909ea182cc176f288d79baab71}
+
+
+Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the average time of each function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} to sort \\
+\hline
+{\em debut} & The left end of the tab \\
+\hline
+{\em fin} & The right end of the tab \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 368 of file tree.\-c.
+
+\hypertarget{tree_8h_af8b0553239e3508f17644db99b26bc70}{\index{tree.\-h@{tree.\-h}!quick\-Sort\-Time@{quick\-Sort\-Time}}
+\index{quick\-Sort\-Time@{quick\-Sort\-Time}!tree.h@{tree.\-h}}
+\subsubsection[{quick\-Sort\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void quick\-Sort\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_af8b0553239e3508f17644db99b26bc70}
+
+
+Function sorting a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} by the total time of each function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} to sort \\
+\hline
+{\em debut} & The left end of the tab \\
+\hline
+{\em fin} & The right end of the tab \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 306 of file tree.\-c.
+
+\hypertarget{tree_8h_a5bfbd71cc5f429d83a9a4d10e1f90515}{\index{tree.\-h@{tree.\-h}!sort\-Choice@{sort\-Choice}}
+\index{sort\-Choice@{sort\-Choice}!tree.h@{tree.\-h}}
+\subsubsection[{sort\-Choice}]{\setlength{\rightskip}{0pt plus 5cm}void sort\-Choice (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_a5bfbd71cc5f429d83a9a4d10e1f90515}
+
+
+Function sorting the \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} depending on the user's choice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} to sort \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 397 of file tree.\-c.
+
+\hypertarget{tree_8h_acb1c52de232dda6c5e5f157498c06222}{\index{tree.\-h@{tree.\-h}!Tab\-From\-Tree@{Tab\-From\-Tree}}
+\index{Tab\-From\-Tree@{Tab\-From\-Tree}!tree.h@{tree.\-h}}
+\subsubsection[{Tab\-From\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}int Tab\-From\-Tree (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{{\bf Tab\-Of\-Fun} $\ast$}]{tab}
+\end{DoxyParamCaption}
+)}}\label{tree_8h_acb1c52de232dda6c5e5f157498c06222}
+
+
+Function creating a \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} from a Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Tree used to build the tab \\
+\hline
+{\em tab} & \hyperlink{struct_tab_of_fun}{Tab\-Of\-Fun} created based on the tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success / exit with E\-X\-I\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file tree.\-c.
+

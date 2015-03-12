@@ -1,0 +1,469 @@
+------------------------------------------------------------------------
+r26 | mdamis | 2014-01-09 21:28:08 +0100 (jeu. 09 janv. 2014) | 1 ligne
+Chemins modifiés :
+   M /src/gui.c
+   M /src/tree.c
+
+Correction finale : suppression de commentaires inutiles
+------------------------------------------------------------------------
+r25 | mdamis | 2014-01-06 14:42:26 +0100 (lun. 06 janv. 2014) | 1 ligne
+Chemins modifiés :
+   M /include/tree.h
+   M /src/main.c
+   M /src/tree.c
+
+Ajout de la fonction FreeTree() pour liberer la memoire
+------------------------------------------------------------------------
+r24 | mdamis | 2014-01-05 17:09:41 +0100 (dim. 05 janv. 2014) | 1 ligne
+Chemins modifiés :
+   A /README.txt
+   A /bin/larger_file.log
+
+Ajout du fichier de log d'un groupe externe et d'un README.txt
+------------------------------------------------------------------------
+r23 | bcrochez | 2014-01-04 10:24:13 +0100 (sam. 04 janv. 2014) | 1 ligne
+Chemins modifiés :
+   M /Makefile
+   M /include/macro_profiler.h
+   M /src/test.c
+
+Suppression de warning et d'erreurs lors de la compilation de la macro
+------------------------------------------------------------------------
+r22 | mdamis | 2014-01-02 15:21:28 +0100 (jeu. 02 janv. 2014) | 1 ligne
+Chemins modifiés :
+   A /doc/html
+   A /doc/html/annotated.html
+   A /doc/html/bc_s.png
+   A /doc/html/bdwn.png
+   A /doc/html/classes.html
+   A /doc/html/closed.png
+   A /doc/html/dir_2c00ecf263af3cca54ed411c5d86c8e4.html
+   A /doc/html/dir_5e9e65045b1eee24572241f590afd472.html
+   A /doc/html/dir_843cf6d2f8e837683c57a32b54fe1424.html
+   A /doc/html/dir_ac9fcec57fb0a615b488e53a1729f53c.html
+   A /doc/html/doxygen.css
+   A /doc/html/doxygen.png
+   A /doc/html/dynsections.js
+   A /doc/html/fact_8c.html
+   A /doc/html/fact_8c_source.html
+   A /doc/html/files.html
+   A /doc/html/ftv2blank.png
+   A /doc/html/ftv2cl.png
+   A /doc/html/ftv2doc.png
+   A /doc/html/ftv2folderclosed.png
+   A /doc/html/ftv2folderopen.png
+   A /doc/html/ftv2lastnode.png
+   A /doc/html/ftv2link.png
+   A /doc/html/ftv2mlastnode.png
+   A /doc/html/ftv2mnode.png
+   A /doc/html/ftv2mo.png
+   A /doc/html/ftv2node.png
+   A /doc/html/ftv2ns.png
+   A /doc/html/ftv2plastnode.png
+   A /doc/html/ftv2pnode.png
+   A /doc/html/ftv2splitbar.png
+   A /doc/html/ftv2vertline.png
+   A /doc/html/functions.html
+   A /doc/html/functions_vars.html
+   A /doc/html/globals.html
+   A /doc/html/globals_defs.html
+   A /doc/html/globals_func.html
+   A /doc/html/globals_type.html
+   A /doc/html/gui_8c.html
+   A /doc/html/gui_8c_source.html
+   A /doc/html/gui_8h.html
+   A /doc/html/gui_8h_source.html
+   A /doc/html/index.html
+   A /doc/html/jquery.js
+   A /doc/html/macro__profiler_8h.html
+   A /doc/html/macro__profiler_8h_source.html
+   A /doc/html/main_8c.html
+   A /doc/html/main_8c_source.html
+   A /doc/html/nav_f.png
+   A /doc/html/nav_g.png
+   A /doc/html/nav_h.png
+   A /doc/html/open.png
+   A /doc/html/search
+   A /doc/html/search/all_61.html
+   A /doc/html/search/all_61.js
+   A /doc/html/search/all_62.html
+   A /doc/html/search/all_62.js
+   A /doc/html/search/all_63.html
+   A /doc/html/search/all_63.js
+   A /doc/html/search/all_64.html
+   A /doc/html/search/all_64.js
+   A /doc/html/search/all_65.html
+   A /doc/html/search/all_65.js
+   A /doc/html/search/all_66.html
+   A /doc/html/search/all_66.js
+   A /doc/html/search/all_67.html
+   A /doc/html/search/all_67.js
+   A /doc/html/search/all_68.html
+   A /doc/html/search/all_68.js
+   A /doc/html/search/all_6c.html
+   A /doc/html/search/all_6c.js
+   A /doc/html/search/all_6d.html
+   A /doc/html/search/all_6d.js
+   A /doc/html/search/all_6e.html
+   A /doc/html/search/all_6e.js
+   A /doc/html/search/all_70.html
+   A /doc/html/search/all_70.js
+   A /doc/html/search/all_71.html
+   A /doc/html/search/all_71.js
+   A /doc/html/search/all_72.html
+   A /doc/html/search/all_72.js
+   A /doc/html/search/all_73.html
+   A /doc/html/search/all_73.js
+   A /doc/html/search/all_74.html
+   A /doc/html/search/all_74.js
+   A /doc/html/search/all_77.html
+   A /doc/html/search/all_77.js
+   A /doc/html/search/classes_63.html
+   A /doc/html/search/classes_63.js
+   A /doc/html/search/classes_64.html
+   A /doc/html/search/classes_64.js
+   A /doc/html/search/classes_6e.html
+   A /doc/html/search/classes_6e.js
+   A /doc/html/search/classes_74.html
+   A /doc/html/search/classes_74.js
+   A /doc/html/search/close.png
+   A /doc/html/search/defines_62.html
+   A /doc/html/search/defines_62.js
+   A /doc/html/search/defines_6d.html
+   A /doc/html/search/defines_6d.js
+   A /doc/html/search/defines_70.html
+   A /doc/html/search/defines_70.js
+   A /doc/html/search/defines_72.html
+   A /doc/html/search/defines_72.js
+   A /doc/html/search/defines_77.html
+   A /doc/html/search/defines_77.js
+   A /doc/html/search/files_66.html
+   A /doc/html/search/files_66.js
+   A /doc/html/search/files_67.html
+   A /doc/html/search/files_67.js
+   A /doc/html/search/files_6d.html
+   A /doc/html/search/files_6d.js
+   A /doc/html/search/files_74.html
+   A /doc/html/search/files_74.js
+   A /doc/html/search/functions_61.html
+   A /doc/html/search/functions_61.js
+   A /doc/html/search/functions_62.html
+   A /doc/html/search/functions_62.js
+   A /doc/html/search/functions_63.html
+   A /doc/html/search/functions_63.js
+   A /doc/html/search/functions_64.html
+   A /doc/html/search/functions_64.js
+   A /doc/html/search/functions_65.html
+   A /doc/html/search/functions_65.js
+   A /doc/html/search/functions_66.html
+   A /doc/html/search/functions_66.js
+   A /doc/html/search/functions_68.html
+   A /doc/html/search/functions_68.js
+   A /doc/html/search/functions_6c.html
+   A /doc/html/search/functions_6c.js
+   A /doc/html/search/functions_6d.html
+   A /doc/html/search/functions_6d.js
+   A /doc/html/search/functions_6e.html
+   A /doc/html/search/functions_6e.js
+   A /doc/html/search/functions_70.html
+   A /doc/html/search/functions_70.js
+   A /doc/html/search/functions_71.html
+   A /doc/html/search/functions_71.js
+   A /doc/html/search/functions_73.html
+   A /doc/html/search/functions_73.js
+   A /doc/html/search/functions_74.html
+   A /doc/html/search/functions_74.js
+   A /doc/html/search/functions_77.html
+   A /doc/html/search/functions_77.js
+   A /doc/html/search/mag_sel.png
+   A /doc/html/search/nomatches.html
+   A /doc/html/search/search.css
+   A /doc/html/search/search.js
+   A /doc/html/search/search_l.png
+   A /doc/html/search/search_m.png
+   A /doc/html/search/search_r.png
+   A /doc/html/search/typedefs_63.html
+   A /doc/html/search/typedefs_63.js
+   A /doc/html/search/typedefs_64.html
+   A /doc/html/search/typedefs_64.js
+   A /doc/html/search/typedefs_6e.html
+   A /doc/html/search/typedefs_6e.js
+   A /doc/html/search/typedefs_74.html
+   A /doc/html/search/typedefs_74.js
+   A /doc/html/search/variables_61.html
+   A /doc/html/search/variables_61.js
+   A /doc/html/search/variables_62.html
+   A /doc/html/search/variables_62.js
+   A /doc/html/search/variables_63.html
+   A /doc/html/search/variables_63.js
+   A /doc/html/search/variables_65.html
+   A /doc/html/search/variables_65.js
+   A /doc/html/search/variables_67.html
+   A /doc/html/search/variables_67.js
+   A /doc/html/search/variables_6e.html
+   A /doc/html/search/variables_6e.js
+   A /doc/html/search/variables_72.html
+   A /doc/html/search/variables_72.js
+   A /doc/html/search/variables_73.html
+   A /doc/html/search/variables_73.js
+   A /doc/html/search/variables_74.html
+   A /doc/html/search/variables_74.js
+   A /doc/html/struct_color.html
+   A /doc/html/struct_data_function.html
+   A /doc/html/struct_node.html
+   A /doc/html/struct_tab_of_fun.html
+   A /doc/html/structcolor.html
+   A /doc/html/structdata_function.html
+   A /doc/html/structnode.html
+   A /doc/html/structtable.html
+   A /doc/html/sync_off.png
+   A /doc/html/sync_on.png
+   A /doc/html/tab_a.png
+   A /doc/html/tab_b.png
+   A /doc/html/tab_h.png
+   A /doc/html/tab_s.png
+   A /doc/html/tabs.css
+   A /doc/html/test_8c.html
+   A /doc/html/test_8c_source.html
+   A /doc/html/tree_8c.html
+   A /doc/html/tree_8c_source.html
+   A /doc/html/tree_8h.html
+   A /doc/html/tree_8h_source.html
+   A /doc/latex
+   A /doc/latex/Makefile
+   A /doc/latex/annotated.tex
+   A /doc/latex/dir_2c00ecf263af3cca54ed411c5d86c8e4.tex
+   A /doc/latex/dir_5e9e65045b1eee24572241f590afd472.tex
+   A /doc/latex/dir_843cf6d2f8e837683c57a32b54fe1424.tex
+   A /doc/latex/dir_ac9fcec57fb0a615b488e53a1729f53c.tex
+   A /doc/latex/doxygen.sty
+   A /doc/latex/fact_8c.tex
+   A /doc/latex/files.tex
+   A /doc/latex/gui_8c.tex
+   A /doc/latex/gui_8h.tex
+   A /doc/latex/macro__profiler_8h.tex
+   A /doc/latex/main_8c.tex
+   A /doc/latex/refman.tex
+   A /doc/latex/struct_color.tex
+   A /doc/latex/struct_data_function.tex
+   A /doc/latex/struct_node.tex
+   A /doc/latex/struct_tab_of_fun.tex
+   A /doc/latex/structcolor.tex
+   A /doc/latex/structdata_function.tex
+   A /doc/latex/structnode.tex
+   A /doc/latex/structtable.tex
+   A /doc/latex/test_8c.tex
+   A /doc/latex/tree_8c.tex
+   A /doc/latex/tree_8h.tex
+
+Ajout de la doc generee par doxygen (html + latex)
+------------------------------------------------------------------------
+r21 | mdamis | 2014-01-02 15:04:59 +0100 (jeu. 02 janv. 2014) | 1 ligne
+Chemins modifiés :
+   M /include/tree.h
+   M /src/main.c
+   M /src/tree.c
+
+Modification de quelques commentaires + nettoyage du code
+------------------------------------------------------------------------
+r20 | mdamis | 2013-12-24 12:22:48 +0100 (mar. 24 déc. 2013) | 4 lignes
+Chemins modifiés :
+   M /include/gui.h
+   M /src/gui.c
+   M /src/main.c
+   M /src/tree.c
+
+Amelioration de l'affichage :
+Ajout de DisplayStopSon et DisplayStopBro qui affichent S et B s'il n'y a plus assez de place pour afficher la suite des appels
+Ajout de commentaires (doxygen)
+Ajout de la position courante dans l'arbre dans ExploreTree
+------------------------------------------------------------------------
+r19 | bcrochez | 2013-12-23 13:32:47 +0100 (lun. 23 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /Makefile
+   M /include/macro_profiler.h
+   M /include/tree.h
+   M /src/main.c
+   M /src/tree.c
+
+Petit menu pour le choix du tri
+------------------------------------------------------------------------
+r18 | mdamis | 2013-12-22 22:11:45 +0100 (dim. 22 déc. 2013) | 4 lignes
+Chemins modifiés :
+   M /include/tree.h
+   M /src/gui.c
+   M /src/main.c
+   M /src/tree.c
+
+Modification de ExploreTree : on peut desormais recommencer l'exploration de 0 et suppression d'un probleme d'affichage
++ Quelques modifications et passage en anglais
+
+
+------------------------------------------------------------------------
+r17 | mdamis | 2013-12-22 20:36:57 +0100 (dim. 22 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /include/gui.h
+   M /include/tree.h
+
+2eme tentative : seconde partie de l'upload (gui.h et tree.h
+------------------------------------------------------------------------
+r16 | mdamis | 2013-12-22 20:34:20 +0100 (dim. 22 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /src/gui.c
+   M /src/main.c
+
+Ajout de commentaires dans gui.h gui.c tree.h main.c (doxygen)
+------------------------------------------------------------------------
+r15 | mdamis | 2013-12-21 23:28:52 +0100 (sam. 21 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /src/main.c
+   M /src/tree.c
+
+Ajout de commentaires pour chaque fonction de tree.c en vue d'une utilisation de doxygen + reglage de quelques details
+------------------------------------------------------------------------
+r14 | bcrochez | 2013-12-21 16:50:57 +0100 (sam. 21 déc. 2013) | 2 lignes
+Chemins modifiés :
+   M /Makefile
+   A /bin/profile.log
+   M /include/macro_profiler.h
+   M /include/tree.h
+   M /src/fact.c
+   M /src/gui.c
+   M /src/main.c
+   M /src/tree.c
+
+Maccro qui marche (enfin)
++ test de profilage sur le profileur
+------------------------------------------------------------------------
+r13 | mdamis | 2013-12-21 15:26:46 +0100 (sam. 21 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /include/macro_profiler.h
+
+modification de la macro pour effectuer des tests et profiler le profiler
+------------------------------------------------------------------------
+r12 | bcrochez | 2013-12-21 10:51:24 +0100 (sam. 21 déc. 2013) | 1 ligne
+Chemins modifiés :
+   A /Makefile (de /src/Makefile:11)
+   D /include/fact.c
+   A /include/gui.h (de /src/gui.h:11)
+   D /include/test.c
+   A /include/tree.h (de /src/tree.h:11)
+   D /src/Makefile
+   A /src/fact.c (de /include/fact.c:11)
+   D /src/gui.h
+   A /src/test.c (de /include/test.c:11)
+   D /src/tree.h
+
+suite de la révision 11
+------------------------------------------------------------------------
+r11 | bcrochez | 2013-12-21 10:42:18 +0100 (sam. 21 déc. 2013) | 2 lignes
+Chemins modifiés :
+   M /src/gui.c
+   M /src/main.c
+   M /src/tree.c
+
+Correction des tris
+Headers dans include, .o et myprofiler dans bin
+------------------------------------------------------------------------
+r10 | mdamis | 2013-12-20 21:18:32 +0100 (ven. 20 déc. 2013) | 5 lignes
+Chemins modifiés :
+   M /src/gui.c
+   M /src/gui.h
+   M /src/main.c
+   M /src/tree.c
+   M /src/tree.h
+
+Niveau de rendu Gendarme de St-Tropez :
+Modification de la gestion des temps : desormais fonctionnelle
+Affichage du degrade modifie pour fonctionner en fonction du temps d'appel (callTime)
+Les quickSort marchent mais pas tout le temps : details a regler
+Ajout d'une fonction ExploreTree qui permet de parcourir l'arbre et choisir a partir de quel noeud lancer l'affichage
+------------------------------------------------------------------------
+r9 | bcrochez | 2013-12-19 13:53:01 +0100 (jeu. 19 déc. 2013) | 3 lignes
+Chemins modifiés :
+   M /src/Makefile
+   M /src/main.c
+   M /src/tree.c
+   M /src/tree.h
+
+Construction du tableau des appels + tris par nombre
+d'appels, par temps total et par temps moyen
+quelques problèmes sur le temps à régler
+------------------------------------------------------------------------
+r8 | mdamis | 2013-12-18 17:57:43 +0100 (mer. 18 déc. 2013) | 2 lignes
+Chemins modifiés :
+   M /src/gui.c
+   M /src/main.c
+   M /src/tree.c
+   M /src/tree.h
+
+Correction de bugs d'affichage mineurs / modification du main -> passage du nom du fichier de log a charger via les args / fonctions pour afficher les temps et le temps de chaque noeud en parcourant l'abre
+A faire : Pb au niveau des temps, bons dans la fonction de Load (sauf le start du main) mais plus une fois sorti de la fonction + Fonction CallTime qui retourne le temps d'appel d'une fonction
+------------------------------------------------------------------------
+r7 | bcrochez | 2013-12-18 16:04:54 +0100 (mer. 18 déc. 2013) | 1 ligne
+Chemins modifiés :
+   A /bin/fibonacci_6_profile.log
+   A /bin/snake_profile.log
+   M /src/tree.c
+   M /src/tree.h
+
+Début de la construction d'un tableau à partir de l'arbre
+------------------------------------------------------------------------
+r6 | bcrochez | 2013-12-18 14:50:31 +0100 (mer. 18 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /src/Makefile
+   M /src/tree.c
+   M /src/tree.h
+
+Suppression de quels erreurs
+------------------------------------------------------------------------
+r5 | mdamis | 2013-12-18 03:11:20 +0100 (mer. 18 déc. 2013) | 2 lignes
+Chemins modifiés :
+   A /src/Makefile
+   A /src/gui.c
+   A /src/gui.h
+   A /src/main.c
+   M /src/tree.c
+   M /src/tree.h
+
+Ajout de la partie graphique (1ere version), ajout d'un main et d'un makefile
+A regler : Affichage -> degrade fait main, a remplacer par une couleur fonction du temps + rajouter le ... quand plus de place pour les appels (plus joli)
+------------------------------------------------------------------------
+r4 | mdamis | 2013-12-17 22:40:30 +0100 (mar. 17 déc. 2013) | 1 ligne
+Chemins modifiés :
+   A /bin/fact.log
+   A /bin/test.log
+   A /include/test.c
+   M /src/tree.c
+
+Correction de LoadFromLog : marche desormais P A R F A I T E M E N T avec les sonL et broR (plus de bug)
+------------------------------------------------------------------------
+r3 | bcrochez | 2013-12-17 11:31:51 +0100 (mar. 17 déc. 2013) | 1 ligne
+Chemins modifiés :
+   M /src/tree.c
+   M /src/tree.h
+
+2éme tentative
+------------------------------------------------------------------------
+r2 | bcrochez | 2013-12-17 11:27:05 +0100 (mar. 17 déc. 2013) | 1 ligne
+Chemins modifiés :
+   A /bin/data.log
+
+Ajout de la construction d'un arbre à partir d'un log
+------------------------------------------------------------------------
+r1 | mdamis | 2013-12-16 23:27:31 +0100 (lun. 16 déc. 2013) | 4 lignes
+Chemins modifiés :
+   A /bin
+   A /doc
+   A /include
+   A /include/fact.c
+   A /include/macro_profiler.h
+   A /src
+   A /src/tree.c
+   A /src/tree.h
+
+1ere version :
+Macro fonctionnelle - ouvre un fichier .log au nom du fichier dans lequel se trouve le main
+Fichier fact.c pour tester la macro
+Creation de tree.c et tree.h avec la structure d'arbre + allocation d'un noeud
+------------------------------------------------------------------------

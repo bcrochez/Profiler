@@ -1,0 +1,54 @@
+\hypertarget{macro__profiler_8h}{\section{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/macro\-\_\-profiler.h File Reference}
+\label{macro__profiler_8h}\index{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/macro\-\_\-profiler.\-h@{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/macro\-\_\-profiler.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$sys/time.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{macro__profiler_8h_a84122cc8fb20a83dda3ef92cf3286740}{P\-R\-O\-F\-I\-L\-E}
+\item 
+\#define \hyperlink{macro__profiler_8h_a88fcb305ac71d9ab027b0ff93c45d210}{return}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{macro__profiler_8h_a84122cc8fb20a83dda3ef92cf3286740}{\index{macro\-\_\-profiler.\-h@{macro\-\_\-profiler.\-h}!P\-R\-O\-F\-I\-L\-E@{P\-R\-O\-F\-I\-L\-E}}
+\index{P\-R\-O\-F\-I\-L\-E@{P\-R\-O\-F\-I\-L\-E}!macro_profiler.h@{macro\-\_\-profiler.\-h}}
+\subsubsection[{P\-R\-O\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-O\-F\-I\-L\-E}}\label{macro__profiler_8h_a84122cc8fb20a83dda3ef92cf3286740}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }timespec start\_log, end\_log; \(\backslash\)
+    clock\_gettime(CLOCK\_REALTIME, &start\_log); \(\backslash\)
+    if(log == NULL) \{ \(\backslash\)
+        if((log = fopen(\textcolor{stringliteral}{"bin/profile.log"}, \textcolor{stringliteral}{"w+"})) == NULL) \{ \(\backslash\)
+            fprintf(stderr, \textcolor{stringliteral}{"Error - fopen\(\backslash\)n"}); \(\backslash\)
+            exit(EXIT\_FAILURE); \(\backslash\)
+        \} \(\backslash\)
+    \} \(\backslash\)
+    fprintf(log, \textcolor{stringliteral}{"%s -- time : %.0f.%.0fs\(\backslash\)n"}, \_\_FUNCTION\_\_, (\textcolor{keywordtype}{double})start\_log.tv\_sec, (\textcolor{keywordtype}{double})start\_log.
+      tv\_nsec/1000); \(\backslash\)
+\end{DoxyCode}
+
+
+Definition at line 13 of file macro\-\_\-profiler.\-h.
+
+\hypertarget{macro__profiler_8h_a88fcb305ac71d9ab027b0ff93c45d210}{\index{macro\-\_\-profiler.\-h@{macro\-\_\-profiler.\-h}!return@{return}}
+\index{return@{return}!macro_profiler.h@{macro\-\_\-profiler.\-h}}
+\subsubsection[{return}]{\setlength{\rightskip}{0pt plus 5cm}\#define return}}\label{macro__profiler_8h_a88fcb305ac71d9ab027b0ff93c45d210}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+clock\_gettime(CLOCK\_REALTIME, &end\_log); \(\backslash\)
+    fprintf(log, \textcolor{stringliteral}{"END -- time : %.0f.%.0fs\(\backslash\)n"}, (\textcolor{keywordtype}{double})end\_log.tv\_sec, (\textcolor{keywordtype}{double})end\_log.tv\_nsec/1000); \(\backslash\)
+    if(strcmp(\_\_FUNCTION\_\_, \textcolor{stringliteral}{"main"}) == 0) \(\backslash\)
+        fclose(log); \(\backslash\)
+    return
+\end{DoxyCode}
+
+
+Definition at line 25 of file macro\-\_\-profiler.\-h.
+

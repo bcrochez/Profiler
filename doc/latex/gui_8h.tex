@@ -1,0 +1,306 @@
+\hypertarget{gui_8h}{\section{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/gui.h File Reference}
+\label{gui_8h}\index{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/gui.\-h@{/home/marwin/\-S\-V\-N/nom\-\_\-de\-\_\-votre\-\_\-projet/include/gui.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$M\-L\-V/\-M\-L\-V\-\_\-all.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}tree.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcolor}{color}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gui_8h_a23f7b870356588ddfcc49a1c364cba5e}{W\-I\-N\-\_\-\-W}~800
+\item 
+\#define \hyperlink{gui_8h_ae893136b52eb3d95f3a310c3900ae42b}{W\-I\-N\-\_\-\-H}~600
+\item 
+\#define \hyperlink{gui_8h_adbd5cbe76e047a39e0a34f085cdae6fe}{M\-I\-N}~50
+\item 
+\#define \hyperlink{gui_8h_a6d0652ae6ea6a5c4fef68baf139fd085}{B\-O\-R\-D\-E\-R}~15
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcolor}{color} \hyperlink{gui_8h_a6fe44c7aac881ad5ef64265fc75a63b5}{Color}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{gui_8h_aeca732f8d80fd36eab287e78c9432b7d}{Width} (int left, int right)
+\begin{DoxyCompactList}\small\item\em Function calculating the width between the left and right borders. \end{DoxyCompactList}\item 
+int \hyperlink{gui_8h_ab5ec36ecd25e701d6092460a24b19bd2}{Height} (int top, int bottom)
+\begin{DoxyCompactList}\small\item\em Function calculating the height between the top and bottom borders. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_aa5169a51b0e0e595c5fe6dac6f3b71fa}{Function\-Color} (\hyperlink{struct_color}{Color} $\ast$\hyperlink{structcolor}{color}, double time, double main\-Time)
+\begin{DoxyCompactList}\small\item\em Function using the time of a function to calculate its color in the G\-U\-I. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a529ab5ae4f080003814b86784049e385}{Display\-Function} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$T, int left, int top, int right, int bottom, \hyperlink{struct_color}{Color} \hyperlink{structcolor}{color})
+\begin{DoxyCompactList}\small\item\em Function drawing a rectangle for the function pointed by T using the borders left, top, right and bottom. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_aa5457cf4c0a316e13377f73012a833c2}{Display\-Stop\-Son} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$T, int left, int top, int right, int bottom, \hyperlink{struct_color}{Color} \hyperlink{structcolor}{color})
+\begin{DoxyCompactList}\small\item\em Function drawing a text box containing \char`\"{}\-S\char`\"{} if there is not enough space to display the function's son\-L. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a3caa1bc99295703fd9ea385b9c7175dc}{Display\-Stop\-Bro} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$T, int left, int top, int right, int bottom, \hyperlink{struct_color}{Color} \hyperlink{structcolor}{color})
+\begin{DoxyCompactList}\small\item\em Function drawing a text box containing \char`\"{}\-B\char`\"{} if there is not enough space to display the function's bro\-R. \end{DoxyCompactList}\item 
+void \hyperlink{gui_8h_a195e461cfafddb01244c9bad8674f5c6}{Display\-Profiler} (\hyperlink{tree_8h_a822067948502eae593d9a26175010b36}{Tree} $\ast$T, int left, int top, int right, int bottom, \hyperlink{struct_color}{Color} \hyperlink{structcolor}{color}, double main\-Time)
+\begin{DoxyCompactList}\small\item\em Function drawing the tree representing the profiled log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{gui_8h_a6d0652ae6ea6a5c4fef68baf139fd085}{\index{gui.\-h@{gui.\-h}!B\-O\-R\-D\-E\-R@{B\-O\-R\-D\-E\-R}}
+\index{B\-O\-R\-D\-E\-R@{B\-O\-R\-D\-E\-R}!gui.h@{gui.\-h}}
+\subsubsection[{B\-O\-R\-D\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-O\-R\-D\-E\-R~15}}\label{gui_8h_a6d0652ae6ea6a5c4fef68baf139fd085}
+
+
+Definition at line 12 of file gui.\-h.
+
+\hypertarget{gui_8h_adbd5cbe76e047a39e0a34f085cdae6fe}{\index{gui.\-h@{gui.\-h}!M\-I\-N@{M\-I\-N}}
+\index{M\-I\-N@{M\-I\-N}!gui.h@{gui.\-h}}
+\subsubsection[{M\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-N~50}}\label{gui_8h_adbd5cbe76e047a39e0a34f085cdae6fe}
+
+
+Definition at line 11 of file gui.\-h.
+
+\hypertarget{gui_8h_ae893136b52eb3d95f3a310c3900ae42b}{\index{gui.\-h@{gui.\-h}!W\-I\-N\-\_\-\-H@{W\-I\-N\-\_\-\-H}}
+\index{W\-I\-N\-\_\-\-H@{W\-I\-N\-\_\-\-H}!gui.h@{gui.\-h}}
+\subsubsection[{W\-I\-N\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N\-\_\-\-H~600}}\label{gui_8h_ae893136b52eb3d95f3a310c3900ae42b}
+
+
+Definition at line 10 of file gui.\-h.
+
+\hypertarget{gui_8h_a23f7b870356588ddfcc49a1c364cba5e}{\index{gui.\-h@{gui.\-h}!W\-I\-N\-\_\-\-W@{W\-I\-N\-\_\-\-W}}
+\index{W\-I\-N\-\_\-\-W@{W\-I\-N\-\_\-\-W}!gui.h@{gui.\-h}}
+\subsubsection[{W\-I\-N\-\_\-\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N\-\_\-\-W~800}}\label{gui_8h_a23f7b870356588ddfcc49a1c364cba5e}
+
+
+Definition at line 9 of file gui.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{gui_8h_a6fe44c7aac881ad5ef64265fc75a63b5}{\index{gui.\-h@{gui.\-h}!Color@{Color}}
+\index{Color@{Color}!gui.h@{gui.\-h}}
+\subsubsection[{Color}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf color}  {\bf Color}}}\label{gui_8h_a6fe44c7aac881ad5ef64265fc75a63b5}
+
+
+\subsection{Function Documentation}
+\hypertarget{gui_8h_a529ab5ae4f080003814b86784049e385}{\index{gui.\-h@{gui.\-h}!Display\-Function@{Display\-Function}}
+\index{Display\-Function@{Display\-Function}!gui.h@{gui.\-h}}
+\subsubsection[{Display\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void Display\-Function (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom, }
+\item[{{\bf Color}}]{color}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_a529ab5ae4f080003814b86784049e385}
+
+
+Function drawing a rectangle for the function pointed by T using the borders left, top, right and bottom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The Tree pointing the current function to draw \\
+\hline
+{\em left} & The left border \\
+\hline
+{\em top} & The top border \\
+\hline
+{\em right} & The right border \\
+\hline
+{\em bottom} & The bottom border \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file gui.\-c.
+
+\hypertarget{gui_8h_a195e461cfafddb01244c9bad8674f5c6}{\index{gui.\-h@{gui.\-h}!Display\-Profiler@{Display\-Profiler}}
+\index{Display\-Profiler@{Display\-Profiler}!gui.h@{gui.\-h}}
+\subsubsection[{Display\-Profiler}]{\setlength{\rightskip}{0pt plus 5cm}void Display\-Profiler (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom, }
+\item[{{\bf Color}}]{color, }
+\item[{double}]{main\-Time}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_a195e461cfafddb01244c9bad8674f5c6}
+
+
+Function drawing the tree representing the profiled log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The Tree pointing the current function \\
+\hline
+{\em left} & The left border \\
+\hline
+{\em top} & The top border \\
+\hline
+{\em right} & The right border \\
+\hline
+{\em bottom} & The bottom border \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+{\em main\-Time} & The Time of the \char`\"{}main\char`\"{} function used as a base for the color \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 141 of file gui.\-c.
+
+\hypertarget{gui_8h_a3caa1bc99295703fd9ea385b9c7175dc}{\index{gui.\-h@{gui.\-h}!Display\-Stop\-Bro@{Display\-Stop\-Bro}}
+\index{Display\-Stop\-Bro@{Display\-Stop\-Bro}!gui.h@{gui.\-h}}
+\subsubsection[{Display\-Stop\-Bro}]{\setlength{\rightskip}{0pt plus 5cm}void Display\-Stop\-Bro (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom, }
+\item[{{\bf Color}}]{color}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_a3caa1bc99295703fd9ea385b9c7175dc}
+
+
+Function drawing a text box containing \char`\"{}\-B\char`\"{} if there is not enough space to display the function's bro\-R. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The Tree pointing the current function \\
+\hline
+{\em left} & The left border \\
+\hline
+{\em top} & The top border \\
+\hline
+{\em right} & The right border \\
+\hline
+{\em bottom} & The bottom border \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 116 of file gui.\-c.
+
+\hypertarget{gui_8h_aa5457cf4c0a316e13377f73012a833c2}{\index{gui.\-h@{gui.\-h}!Display\-Stop\-Son@{Display\-Stop\-Son}}
+\index{Display\-Stop\-Son@{Display\-Stop\-Son}!gui.h@{gui.\-h}}
+\subsubsection[{Display\-Stop\-Son}]{\setlength{\rightskip}{0pt plus 5cm}void Display\-Stop\-Son (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree} $\ast$}]{T, }
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom, }
+\item[{{\bf Color}}]{color}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_aa5457cf4c0a316e13377f73012a833c2}
+
+
+Function drawing a text box containing \char`\"{}\-S\char`\"{} if there is not enough space to display the function's son\-L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & The Tree pointing the current function \\
+\hline
+{\em left} & The left border \\
+\hline
+{\em top} & The top border \\
+\hline
+{\em right} & The right border \\
+\hline
+{\em bottom} & The bottom border \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file gui.\-c.
+
+\hypertarget{gui_8h_aa5169a51b0e0e595c5fe6dac6f3b71fa}{\index{gui.\-h@{gui.\-h}!Function\-Color@{Function\-Color}}
+\index{Function\-Color@{Function\-Color}!gui.h@{gui.\-h}}
+\subsubsection[{Function\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Function\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf Color} $\ast$}]{color, }
+\item[{double}]{time, }
+\item[{double}]{main\-Time}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_aa5169a51b0e0e595c5fe6dac6f3b71fa}
+
+
+Function using the time of a function to calculate its color in the G\-U\-I. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the rectangle \\
+\hline
+{\em time} & The time of the current function \\
+\hline
+{\em main\-Time} & The Time of the \char`\"{}main\char`\"{} function used as a base for the color \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file gui.\-c.
+
+\hypertarget{gui_8h_ab5ec36ecd25e701d6092460a24b19bd2}{\index{gui.\-h@{gui.\-h}!Height@{Height}}
+\index{Height@{Height}!gui.h@{gui.\-h}}
+\subsubsection[{Height}]{\setlength{\rightskip}{0pt plus 5cm}int Height (
+\begin{DoxyParamCaption}
+\item[{int}]{top, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_ab5ec36ecd25e701d6092460a24b19bd2}
+
+
+Function calculating the height between the top and bottom borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & The top border \\
+\hline
+{\em bottom} & The bottom border \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int value of the calculated height 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file gui.\-c.
+
+\hypertarget{gui_8h_aeca732f8d80fd36eab287e78c9432b7d}{\index{gui.\-h@{gui.\-h}!Width@{Width}}
+\index{Width@{Width}!gui.h@{gui.\-h}}
+\subsubsection[{Width}]{\setlength{\rightskip}{0pt plus 5cm}int Width (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{gui_8h_aeca732f8d80fd36eab287e78c9432b7d}
+
+
+Function calculating the width between the left and right borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left border \\
+\hline
+{\em right} & The right border \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An int value of the calculated width 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file gui.\-c.
+
